@@ -7,9 +7,9 @@ const Hero = () => {
     <>
      <section class="hero">
     <div class="hero-content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, esse!</p>
-
-      <h1>the good ,the bad amd the ugly about Narendra Modi</h1>
+      
+<p className='date'> Date: October 10, 2024</p>
+      <h1>The good ,The bad and The ugly about Narendra Modi</h1>
       <button class="read">Read More</button>
       </div>
       </section>

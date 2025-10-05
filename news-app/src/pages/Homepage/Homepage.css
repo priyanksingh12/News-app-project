@@ -1,0 +1,9 @@
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  padding: 22px 25px 25px;
+  margin: 0px 10px;
+border-radius: 20px;
+  background-color: rgba(199, 254, 254, 0.477);
+}

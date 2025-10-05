@@ -1,18 +1,31 @@
 import React from "react";
-import "./NewsCard.css"; // optional for styling
+import "./NewsCard.css";
 
-const NewsCard = ({ heading, category, para, summary, image }) => {
+const NewsCard = ({ article }) => {
   return (
     <div className="news-card">
-      <img src={image} alt={heading} className="news-img" />
-      <div className="news-content">
-        <h2>{heading}</h2>
-        <span className="category">{category}</span>
-        <p>{para}</p>
-        <small>{summary}</small>
-      </div>
+      {article.image_url && (
+        <img 
+          src={article.image_url} 
+          alt={article.title} 
+          className="news-image"
+        />
+      )}
+      <h2 className="news-title">{article.title}</h2>
+      <p className="news-description">
+        {article.description || "No description available."}
+      </p>
+      <p className="news-date">
+        Published: {article.pubDate ? new Date(article.pubDate).toLocaleString() : "N/A"}
+      </p>
+      {article.link && (
+        <a href={article.link} target="_blank" rel="noopener noreferrer" className="news-link">
+          Read more →
+        </a>
+      )}
     </div>
   );
 };
 
 export default NewsCard;
+

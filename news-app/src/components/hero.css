@@ -11,8 +11,6 @@
   align-items: center;
 }
 
-
-
 .hero-content {
   
   max-width: 800px;
@@ -44,4 +42,34 @@ font-weight: 700;
   border-radius: 50px;
   font-size: 1.2rem;
   margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 40px 15px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .read {
+    font-size: 1rem;
+    padding: 10px 16px;
+    margin-top: 15px;
+  }
 }
